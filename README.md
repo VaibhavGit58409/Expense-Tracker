@@ -14,7 +14,18 @@ This is a **backend API** for an **Expense Tracker App**, built using **Node.js,
 ---
 
 ## 📂 Project Structure
-📁 Expense-Tracker ├── 📄 server.js ├── 📂 models/ │ ├── 📄 User.js │ ├── 📄 Expense.js ├── 📂 routes/ │ ├── 📄 authRoutes.js │ ├── 📄 expenseRoutes.js ├── 📄 .env ├── 📄 .gitignore ├── 📄 package.json └── 📄 README.md
+📁 Expense-Tracker 
+├── 📄 server.js 
+├── 📂 models/ 
+      ├── 📄 User.js 
+      ├── 📄 Expense.js 
+├── 📂 routes/ 
+      ├── 📄 authRoutes.js 
+      ├── 📄 expenseRoutes.js 
+├── 📄 .env 
+├── 📄 .gitignore 
+├── 📄 package.json 
+└── 📄 README.md
 
 
 ---
@@ -23,19 +34,19 @@ This is a **backend API** for an **Expense Tracker App**, built using **Node.js,
 
 ### **1️⃣ Clone the Repository**
 - ```bash
-git clone https://github.com/YourUsername/Expense-Tracker.git
-cd Expense-Tracker
+  git clone https://github.com/YourUsername/Expense-Tracker.git
+  cd Expense-Tracker
 
 ### **2️⃣ Install Dependencies**
 - ```bash
-npm install
+  npm install
 
 ### **3️⃣ Set Up Environment Variables**
 
 Create a .env file in the root directory and add:
 - ```ini
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+  MONGO_URI=your_mongodb_connection_string
+  JWT_SECRET=your_secret_key
 
 
 🔹 Replace your_mongodb_connection_string with your actual MongoDB connection URL.
@@ -43,7 +54,7 @@ JWT_SECRET=your_secret_key
 
 ### **4️⃣ Run the Project**
 - ```bash
-node server.js
+  node server.js
 
 The server will start at: http://localhost:5000
 
@@ -54,34 +65,34 @@ The server will start at: http://localhost:5000
 #### **Endpoint: POST /api/auth/register**
 #### **Request Body (JSON)** :
 - ```json
-{
+  {
   "name": "John Doe",
   "email": "john@example.com",
   "password": "password123"
-}
+  }
 
 ### **Response**:
 - ```json
-{
+  {
   "message": "User registered successfully"
-}
+  }
 
 ### **2️⃣ Login User & Get Token 🔑**
 
 #### **Endpoint: POST /api/auth/login**
 #### **Request Body (JSON)**:
 - ```json
-{
+  {
   "email": "john@example.com",
   "password": "password123"
-}
+  }
 
 
 #### **Response**:
 - ```json
-{
+  {
   "token": "eyJhbGciOiJIUzI1NiIsInR5c..."
-}
+  }
 
 ### **3️⃣ Add Expense 💸**
 
@@ -92,17 +103,17 @@ Authorization: Bearer <your_token_here>
 
 #### **Request Body(JSON)**:
 - ```json
-{
+  {
   "title": "Grocery Shopping",
   "amount": 500,
   "category": "Food"
-}
+  }
 
 #### **Response**:
 - ```json
-{
+  {
   "message": "Expense added successfully"
-}
+  }
 
 
 ### **4️⃣ Get All Expenses 📜**
@@ -110,7 +121,7 @@ Authorization: Bearer <your_token_here>
 #### **Endpoint: GET /api/expenses**
 #### **Response(JSON)**:
 - ```json
-[
+  [
   {
     "id": "123",
     "title": "Grocery Shopping",
@@ -123,20 +134,20 @@ Authorization: Bearer <your_token_here>
     "amount": 299,
     "category": "Entertainment"
   }
-]
+  ]
 
 ### **5️⃣ Delete Expense 🗑️**
 
 #### **Endpoint: DELETE /api/expenses/:id**
 #### **Headers**:
 - ```makefile
-Authorization: Bearer <your_token_here>
+  Authorization: Bearer <your_token_here>
 
 #### **Response (JSON)**:
 - ```json
-{
+  {
   "message": "Expense deleted successfully"
-}
+  }
 
 
 

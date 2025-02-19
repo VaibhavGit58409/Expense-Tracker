@@ -34,7 +34,7 @@ This is a **backend API** for an **Expense Tracker App**, built using **Node.js,
 
 ### **1️⃣ Clone the Repository**
 - ```bash
-  git clone https://github.com/YourUsername/Expense-Tracker.git
+  git clone https://github.com/VaibhavGit58409/Expense-Tracker.git
   cd Expense-Tracker
 
 ### **2️⃣ Install Dependencies**

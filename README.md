@@ -49,7 +49,8 @@ Create a .env file in the root directory and add:
   JWT_SECRET=your_secret_key
 
 
-🔹 Replace your_mongodb_connection_string with your actual MongoDB connection URL.
+🔹 Replace your_mongodb_connection_string with your actual MongoDB connection URL. 
+
 🔹 Replace your_secret_key with a strong secret for JWT authentication.
 
 ### **4️⃣ Run the Project**
